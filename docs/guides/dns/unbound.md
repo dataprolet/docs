@@ -175,6 +175,8 @@ dig dnssec.works @127.0.0.1 -p 5335
 
 The first command should give a status report of `SERVFAIL` and no IP address. The second should give `NOERROR` plus an IP address.
 
+(Note that it is not necessary to enable DNSSEC in Pi-hole.)
+
 ### Configure Pi-hole
 
 Finally, configure Pi-hole to use your recursive DNS server by specifying `127.0.0.1#5335` as the Custom DNS (IPv4):
